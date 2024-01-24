@@ -1,114 +1,138 @@
-
-Align-content:center
-
-lable.logo{
-
-    color: #070606;
-    line-height: 50px
-    padding: 30px;
-    text-decoration: none;
-    font-size: 50px;       
+/* Navigation Bar */
+.topnav a {
+  float: left;
+  color: #070606;
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+  font-size: 60px;
 }
 
-.topnav {
-    background-color: #6b5c0927;
-    overflow: hidden;
-  }
-  
+.topnav a:hover {
+  background-color: #8a7d7d;
+  color: black;
+}
 
-  .topnav a {
-    float: left;
-    color: #070606;
-    text-align: center;
-    padding: 30px;
-    text-decoration: none;
-    font-size: 50px;
-  }
-  
- 
-  .topnav a:hover {
+.topnav a.active {
+  background-color: #8a7d7d;
+  color: rgb(156, 52, 52);
+}
+
+/* Navigation Bar */
+.nav ul {
+    list-style: none;
     background-color: #8a7d7d;
-    color: black;
-  }
-  
+    text-align: center;
+    padding: 0.7%;
+    margin: 0%;
+}
 
-  .topnav a.active {
-    background-color: #363336;
-    color: white;
-  }
+/* Navigation Bar Font Layout */
+.nav li {
+    display: inline-block;
+}
 
-  <style>
-  <body{
-      margin: 0;
-      padding: 0;
-      background-color: beige;
+/* Navigation Bar Font */
+.nav a {
+    text-decoration: none; /* Updated to a valid value */
+    color: rgb(0, 0, 0);
+    width: 180px;
+    display: block;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
 
-  }
-  .nav ul {
-      list-style: none;
-      background-color: #b2a3a3;
-      text-align: center;
-      padding: 0.7%;
-      margin: 0%;
-  }
+/*Cursor hover*/
+.nav a:hover {
+    background-color: #c7a17b;
+    transition: 0.10s;
+}
 
-  .nav li {
-      display: inline-block;
+/* Main Page */
+* {
+  box-sizing: border-box;
+}
 
-  }
-  .nav a {
-      text-decoration: solid;
-      color: rgb(0, 0, 0);
-      width: 180px;
-      display: block;
-      font-size: 20px;
-      font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+.container {
+  padding: 64px;
+}
 
-  }
-  .nav a:hover {
-      background-color: rgb(206, 187, 171);
-      transition: 0.10s;
-  }
-  
+/* Clear floats */
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
 
+/* 2/3 column */
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
 
-  * {
-    box-sizing: border-box;
-  }
-  
-  .container {
-    padding: 64px;
-  }
-  
-  /* Clear floats */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both
-  }
-  
-  /* 2/3 column */
-  .column-66 {
-    float: left;
-    width: 66.66666%;
-    padding: 20px;
-  }
-  
-  /* 1/3 column */
+/* 1/3 column */
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+/* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */
+@media screen and (max-width: 1000px) {
+  .column-66,
   .column-33 {
-    float: left;
-    width: 33.33333%;
-    padding: 20px;
+    width: 100%;
+    text-align: center;
   }
-  
-  /* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */
-  @media screen and (max-width: 1000px) {
-    .column-66,
-    .column-33 {
-      width: 100%;
-      text-align: center;
-    }
-  }
+}
 
-</style>
+/* Button Styles */
+.button-link {
+  text-decoration: none;
+  display: inline-block;
+}
 
+.button-link:hover {
+  opacity: 0.8;
+}
+
+.button {
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgba(120, 83, 53, 0.8);
+}
+
+/* Week 1-4 Zigzag Styles */
+#content {
+  max-width: 500px;
+  margin: 2em auto;
+  padding: 1em;
+}
+
+.zigzag-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.zigzag-column {
+  flex: 0 1 calc(50% - 50px); /* Two columns per row */
+  margin-bottom: 20px;
+  background-color: #c2b29a;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styles for Week 1-4 specific content */
+.zigzag-column h2 {
+  color: rgb(8, 6, 4);
+  padding-bottom: 10px; /* Add padding to the bottom of each header */
+}
