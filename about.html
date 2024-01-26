@@ -1,23 +1,101 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./main2.css" rel="stylesheet">
     <title>About Me</title>
-</head>
-<body>
-    
 
-    <div id="content">
-        <header>
-            <h1>About Me</h1>
-        </header>
-    
-        
-        <p>.</p>
+  <style>
+    body {
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #dabcbca0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .profile-picture {
+      display: block;
+      margin: 0 auto;
+      border-radius: 50%;
+      max-width: 200px;
+      height: auto;
+    }
+
+    .about-me {
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .social-links {
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      color: #7a7b7c;
+      margin: 0 10px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      padding: 10px;
+      background-color: #6f636329;
+      color: #fff;
+    }
+
+    /* Media Query for Responsive Design */
+    @media (max-width: 600px) {
+      .profile-picture {
+        max-width: 150px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>About Me</h1>
     </div>
 
-    <div class="verse">“My grace is sufficient for you, for my power is made perfect in weakness.” 2 Corinthians 12:9</div>
+  <!--<img class="profile-picture" src="your-profile-picture.jpg" alt="Profile Picture"> has been commented out-->
+
+    <div class="about-me">
+      <p>
+        Welcome to my digital journal where I will be documenting my thoughts and challenges throughout my software development bootcamp journey, my hope is that when you are reading through my journal throughout the weeks you will be able to see what I’ve learnt how I have overcome any challenges that I have faced during the weeks of the course.
+        </p>
+        <p>The reason why I chose to enrol and start the course is because I have always been interested in coding and separately how things are made from the inside out my main goal is to be able to design make a functioning website for my mums healthcare training website. I have a passion for DIY, I enjoy traveling, going to the gym & eating. with coding I feel it also teaches you how to be more patience in what ever task you are doing.</p>
+    <p>If you notice any spelling mistakes, I apologize in advance it is not my greatest strength, I do hope you enjoy reading about my journey. </p>
+   <p>Thanks Management 😊</p>
+</div>
+
+    <div class="social-links">
+    
+      <a href="https://linkedin.com/in/cmarange-9798a887" target="_blank">LinkedIn</a>
+      <!-- Add more social links as needed -->
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; “My grace is sufficient for you, for my power is made perfect in weakness.” 2 Corinthians 12:9
+  </div>
 </body>
+
 </html>
