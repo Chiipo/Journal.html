@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./main2.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .tab {
+            background-color: #c2baba;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .zigzag-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .zigzag-column {
+            background-color: #c2b29a7c;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .zigzag-column h2 {
+            color: #080604;
+            margin-top: 0;
+            font-size: 20px;
+        }
+
+        .verse {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(216, 211, 197, 0.61);
+            padding: 10px;
+            text-align: center;
+            font-style: italic;
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .zigzag-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <title>Week One</title>
+</head>
+<body>
+    <header>
+        <h1>Week One</h1>
+        <a class="tab" href="index.html">Software Development Journey</a>
+    </header>
+    <div class="zigzag-container">
+        <div class="zigzag-column">
+            <h2>Week 1 - Introduction to Coding, JavaScript Fundamentals + Databases</h2>
+            <p><img src="your-image-url.jpg" alt="Your Image" style="width: 100%; height: auto;"></p>
+            <p>Monday: Week one was the beginning of my software development journey, as this was our first session which was on Monday our tutor Leon asked everyone in the class to do a little ice breaker on a little bit about themselves. He then went through what we will be doing throughout the eleven weeks and how each week would be structured. Today we had an introduction to what coding is and we got a chance to make some code and used visual studio code or VSC. We also were tasked a challenge for VSC, *EXAMPLE*</p>
+            <p>Tuesday: Today we met Paul, he introduced us to databases, we first looked at what a computer programme is and how that links to a database we then looked at computational thinking which is logical, algorithmic + decomposition  * EXAMPLE OF ONE*</p>
+            <p>Each Tuesday afternoon we have an employability session as this was our first week, we got introduces to out coach for then duration of the course, we also went over what each session over the next 11 weeks would be about. I the first session we were asked to send over our CV.</p>
+            <p>Wednesday</p>
+            <p>Thursday</p>
+            <p>Friday: Friday afternoon session I enjoyed the presentation task, I was nervous at first as I’m not good with presenting or talking in a crowd however once the nerves went, I was happy, I also enjoyed listening to everyone presenting, I also learnt a few things which got me like ahh that makes sense</p>
+        </div>
+    </div>
+    <div class="verse">“My grace is sufficient for you, for my power is made perfect in weakness.” 2 Corinthians 12:9</div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./main2.css" rel="stylesheet">
+    <style>
+  body {
+            margin: 0;
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .tab {
+            background-color: #c2baba;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .zigzag-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .zigzag-column {
+            background-color: #c2b29a7c;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .zigzag-column h2 {
+            color: #080604;
+            margin-top: 0;
+            font-size: 20px;
+        }
+
+        .verse {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(216, 211, 197, 0.61);
+            padding: 10px;
+            text-align: center;
+            font-style: italic;
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .zigzag-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+    <title>Week Four</title>
+</head>
+<body>
+
+<header>
+    <h1>Week Four</h1>
+    <a class="tab" href="index.html">Software Development Journey</a>
+</header>
+
+<div class="zigzag-container">
+    <div class="zigzag-column">
+        <h2>Week 4 – JavaScript DOM + Introduction to MongoDB</h2>
+        
+        <p>Monday: This week's session introduced JavaScript DOM and its structure within HTML. DOM stands for Document Object Model, representing each element on the page as an object, allowing JS to access and manipulate them. An example skeleton for a website was provided.</p>
+       
+        <p>Within the session, the document object was discussed, widely used to describe HTML content. JS enables changing the page's appearance by altering element colors, demonstrated with an event listener adding color to a header.</p>
+        
+        <p>Further topics included selecting elements by ID, focusing on specific elements, and techniques like Select Elements of Particular Type, querySelector, textContent, innerHTML, Changing Element Attributes, and Styling Elements with JS.</p>
+        
+        <img src="https://1drv.ms/i/s!AoAd6zefrpsq2Wxe-wsiNwzrXdp3?e=Djrnrw" alt="Your Image" style="width: 300px; height: 300px ;">
+
+        <p>Within the session document object was something that was looked at, this is used widely to describe the HTML content for a page, when you use JS, you will be then able to change how the page looks like changing the colour of something on the page. In order to understand more the task was given to give event listen a go, this would add an element which will change the colour of a certain item on the page, the example which was given was of a header </p>
+       
+        <p>*Add Event Listener example from journal.
+            Selecting an element by it’s ID was something that was looked at, this links to event listener because when you’re selecting an element by its id you are instructing the code to only focus on one specific element. We looked at Select Elements of Particular Type, querySelector and querySelectorAll, textContent and innerHTML, Changing Element Attributes, Styling Elements with JS.
+            *Add items for each* - Select Elements of Particular Type, querySelector and querySelectorAll, textContent and innerHTML, Changing Element Attributes, Styling Elements with JS.
+            </p>
+
+        <p>Tuesday: Morning focused on Programming Code Paradigms and installing MongoDB. Afternoon covered employability sessions.</p>
+        
+        <p>Wednesday: Add images here if necessary.</p>
+        
+        <p>Thursday: Today was a recap on subject’s people felt they need more clarity one, we spent time revisiting functions  </p>
+        
+        <p>Friday: </p>
+
+    </div>
+</div>
+
+<div class="verse">“My grace is sufficient for you, for my power is made perfect in weakness.” 2 Corinthians 12:9</div>
+
+</body>
+</html>

@@ -3,59 +3,101 @@ body {
   font-family:'Trebuchet MS';
   margin: 0;
   padding: 0;
-  background-color: #dabcbca0;
+  background-color: #eee7e7a0;
 }
 
 
-/* Navigation Bar */
-.topnav a {
-  float: left;
-  color: #070606;
+/* Navbar background */
+.navbar {
+  background-color: #eee7e7a0;
+  list-style-type: none;
+  text-align: center; 
+  overflow: hidden;
+  position: relative; 
+}
+  
+
+.navbar li {
+  display: inline-block;
+}
+
+
+/* Navbar text  */
+.navbar a {
+  display: block;
+  color: #070707;
   text-align: center;
-  padding: 30px;
+  padding: 12px 20px;
   text-decoration: none;
-  font-size: 60px;
 }
 
-.topnav a:hover {
-  background-color: #8a7d7d;
-  color: rgb(233, 221, 221);
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #9a747400;
 }
 
-.topnav a.active {
-  background-color: #8a7d7d;
-  color: rgba(134, 134, 134, 0.764);
+/* Style the dropdown menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-/* Navigation Bar */
-.nav ul {
-    list-style: none;
-    background-color: #6f63631f;
-    text-align: center;
-    padding: 0.7%;
-    margin: 0%;
+/* Style the dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: #000000;
+  background-color: #eee7e7a0;
+  padding: 12px 20px;
+  cursor: pointer; 
 }
 
-/* Navigation Bar Font Layout */
-.nav li {
-    display: inline-block;
+/* Style the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #bca8a8;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(123, 94, 94, 0.367);
+  z-index: 1;
 }
 
-/* Navigation Bar Font */
-.nav a {
-    text-decoration: none; /* Updated to a valid value */
-    color: #fff;
-    width: 180px;
-    display: block;
-    font-size: 20px;
-    font-family: 'Trebuchet MS';
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  color: #000000;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
-/*Cursor hover*/
-.nav a:hover {
-    background-color: #c7a17b;
-    transition: 0.10s;
+/* Change the color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #eee7e7a0;
 }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display:inline;
+}
+
+/* Adjust dropdown content position */
+.dropdown-content {
+  top: 42px;
+  left: 0;
+}
+
+/* Hide the dropdown content when not hovering over the dropdown */
+.dropdown:hover .dropdown-content {
+  display: none;
+}
+
+/* Show the dropdown content when hovering over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 
 .footer {
   text-align: center;
@@ -65,7 +107,7 @@ body {
   color: #fff;
 }
 
-/* Main Page */
+
 * {
   box-sizing: border-box;
 }
@@ -123,7 +165,7 @@ body {
 }
 
 .button:hover {
-  background-color: rgba(120, 83, 53, 0.8);
+  background-color: rgba(131, 93, 63, 0);
 }
 
 /* Week 1-4 Zigzag Styles */
@@ -145,7 +187,7 @@ body {
   background-color: #c2b29a;
   padding: 10px;
   border-radius: 8px;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 40px rgba(166, 172, 193, 0.1);
 }
 
 /* Additional styles for Week 1-4 specific content */

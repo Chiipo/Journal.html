@@ -1,101 +1,124 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./main2.css" rel="stylesheet">
     <title>About Me</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS';
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; 
+        }
 
-  <style>
-    body {
-      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #dabcbca0;
-    }
+       
+        .header {
+            background-color: #c2baba;
+            color: #ffffff;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
 
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      text-align: center
-    }
+        .header h1 {
+            margin: 0;
+            font-size: 24px; 
+        }
 
-    .header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
+      
+        .tab {
+            background-color: #c2baba;
+            padding: 5px 10px; 
+            border-radius: 20px; 
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 12px; 
+            text-align: center; 
+            text-transform: uppercase; 
+            margin-left: 20px; 
+            white-space: nowrap; 
+            overflow: hidden; 
+            text-overflow: ellipsis; 
+        }
 
-    .profile-picture {
-      display: block;
-      margin: 0 auto;
-      border-radius: 50%;
-      max-width: 200px;
-      height: auto;
-    }
+        .container {
+            max-width: 800px; 
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center; 
+        }
 
-    .about-me {
-      text-align: center;
-      line-height: 1.6;
-    }
+        .about-me {
+            text-align: justify; 
+            line-height: 1.6;
+            margin-bottom: 20px; 
+        }
 
-    .social-links {
-      margin-top: 20px;
-    }
+        .social-links {
+            text-align: center; 
+        }
 
-    .social-links a {
-      text-decoration: none;
-      color: #7a7b7c;
-      margin: 0 10px;
-    }
+        .social-links a {
+            text-decoration: none;
+            color: #7a7b7c;
+            margin: 0 10px;
+            transition: color 0.3s ease; 
+        }
 
-    .footer {
-      text-align: center;
-      margin-top: 30px;
-      padding: 10px;
-      background-color: #6f636329;
-      color: #fff;
-    }
+        .social-links a:hover {
+            color: #333; 
+        }
 
-    /* Media Query for Responsive Design */
-    @media (max-width: 600px) {
-      .profile-picture {
-        max-width: 150px;
-      }
-    }
-  </style>
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #6f636329;
+            color: #fff;
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column; 
+            }
+
+            .tab {
+                margin-left: 0; 
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>About Me</h1>
+    <div class="container">
+        <div class="header">
+            <div class="tab">Software Development Journey</div>
+            <h1>About Me</h1>
+        </div>
+
+        <div class="about-me">
+            <p>
+                Welcome to my digital journal where I will be documenting my thoughts and challenges throughout my software development bootcamp journey. My hope is that when you are reading through my journal throughout the weeks, you will be able to see what I’ve learnt and how I have overcome any challenges that I have faced during the course.
+            </p>
+            <p>
+                The reason why I chose to enroll and start the course is because I have always been interested in coding and how things are made from the inside out. My main goal is to be able to design and create a functioning website for my mum's healthcare training website. I have a passion for DIY, enjoy traveling, going to the gym, and eating. Coding also teaches you how to be more patient in whatever task you are doing.
+            </p>
+            <p>
+                If you notice any spelling mistakes, I apologize in advance 😊 it is not my greatest strength. I do hope you enjoy reading about my journey. 
+            </p>
+                        <p>Thanks Management 😊</p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://linkedin.com/in/cmarange-9798a887" target="_blank">LinkedIn</a>
+        </div>
     </div>
 
-  <!--<img class="profile-picture" src="your-profile-picture.jpg" alt="Profile Picture"> has been commented out-->
-
-    <div class="about-me">
-      <p>
-        Welcome to my digital journal where I will be documenting my thoughts and challenges throughout my software development bootcamp journey, my hope is that when you are reading through my journal throughout the weeks you will be able to see what I’ve learnt how I have overcome any challenges that I have faced during the weeks of the course.
-        </p>
-        <p>The reason why I chose to enrol and start the course is because I have always been interested in coding and separately how things are made from the inside out my main goal is to be able to design make a functioning website for my mums healthcare training website. I have a passion for DIY, I enjoy traveling, going to the gym & eating. with coding I feel it also teaches you how to be more patience in what ever task you are doing.</p>
-    <p>If you notice any spelling mistakes, I apologize in advance it is not my greatest strength, I do hope you enjoy reading about my journey. </p>
-   <p>Thanks Management 😊</p>
-</div>
-
-    <div class="social-links">
-    
-      <a href="https://linkedin.com/in/cmarange-9798a887" target="_blank">LinkedIn</a>
-      <!-- Add more social links as needed -->
+    <div class="footer">
+        &copy; “My grace is sufficient for you, for my power is made perfect in weakness.” 2 Corinthians 12:9
     </div>
-  </div>
-
-  <div class="footer">
-    &copy; “My grace is sufficient for you, for my power is made perfect in weakness.” 2 Corinthians 12:9
-  </div>
 </body>
-
 </html>
